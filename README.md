@@ -1,2 +1,2 @@
 # Useful-Frida
-Useful frida scripts
+Just some frida scripts i have found useful
