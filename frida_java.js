@@ -79,14 +79,7 @@ function traceMethod(targetClassMethod)
 			}
 
 			// print retval
-			var retval = this[targetMethod].apply(this, arguments); 
-			var test = '[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,"sailfish","8996-012001-1907011432","google","arm64-v8a","","abfarm813","sailfish","sailfish","Google","Pixel","sailfish"]'
-			//var win = '[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"sailfish","8996-012001-1907011432","google","arm64-v8a","","abfarm813","sailfish","sailfish","Google","Pixel","sailfish"]'
-			var win = ""
-			
-			if (retval == test){
-			    retval = win
-			}			 
+			var retval = this[targetMethod].apply(this, arguments); 	 
 			console.log("\n\x1b[31mretval:\x1b[0m \x1b[34m" + retval + "\x1b[0m");
 			console.warn("\n[-] Exiting: " + targetClassMethod);
 			return retval;
